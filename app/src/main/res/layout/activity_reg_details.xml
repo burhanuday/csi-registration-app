@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_details"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    tools:context=".RegDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone" />
+
+        <TextView
+            android:id="@+id/tv_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Event" />
+
+        <TextView
+            android:id="@+id/tv_college"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="College" />
+
+        <TextView
+            android:id="@+id/tv_apaid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amount Paid" />
+
+        <TextView
+            android:id="@+id/tv_apending"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amount Pending" />
+
+        <TextView
+            android:id="@+id/tv_regby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registered by" />
+
+        <TextView
+            android:id="@+id/tv_regat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registered at" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <Button
+                android:id="@+id/bt_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="editReg"
+                android:text="Edit" />
+
+            <Button
+                android:id="@+id/bt_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="delReg"
+                android:text="Delete"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_mark_used"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CHECK USED" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
